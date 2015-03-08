@@ -1,6 +1,6 @@
 # angular-list-tree — Basic AngularJS tree
 
-This project is an simple array tree.
+This project is simple array tree.
 
 ## Getting Started
 
@@ -8,16 +8,16 @@ To get you started you can simply clone the repository and install the dependenc
 
 ### Prerequisites
 
-You need git to clone the repository.).
+You need git to clone the repository.
 
-We also use a number of node.js tools to initialize and test. You must have node.js and
+Project also uses a number of node.js tools to initialize and test. You must have node.js and
 its package manager (npm) installed.  You can get them from [http://nodejs.org/](http://nodejs.org/).
 
 ### Clone angular-seed
 
-Clone the angular-list-tree repository using [git][git]:
+Clone the angular-list-tree repository using git:
 
-git clone https://github.com/angular/angular-list-tree.git
+git clone https://github.com/mPlaton/angular-list-tree.git
 cd angular-list-tree
 ```
 

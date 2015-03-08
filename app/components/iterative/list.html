@@ -1,0 +1,19 @@
+<a href="" ng-class="{'editable' : data.edit}" style="margin-left:{{ 5 * (data.level - 1) }}px">
+    <i ng-click="toggleNodes(data)"
+       ng-class="{'glyphicon-chevron-down' : (data.state && childCount(data) > 0),
+                  'glyphicon-chevron-right' : (!data.state && childCount(data) > 0),
+                  'glyphicon-file' : childCount(data) == 0 }"
+       class="glyphicon opener"></i>
+
+    <span ng-show="!data.edit" ng-click="showEdit(data)">
+        {{ data.title }}
+        <i class="glyphicon glyphicon-pencil left-margin"></i>
+    </span>
+
+    <form ng-show="data.edit" ng-submit="submitEdit(data)">
+        <input ng-model="data.title" set-focus="data.edit" />
+    </form>
+
+    <i ng-click="add(data)" class="glyphicon glyphicon-plus pull-right green add"></i>
+    <i ng-click="remove(data)" class="glyphicon glyphicon-minus pull-right red" ng-show="childCount(data) > 0"></i>
+</a>

@@ -1,0 +1,80 @@
+.application{
+    margin:30px 0 0;
+}
+
+.nav li {
+    padding-left:10px;
+}
+
+.holder{
+    background: #f7f7f7;
+    border-radius: 4px;
+    margin: 50px 20px;
+    padding: 20px 10px;
+    border: 1px solid #dedede;
+}
+
+.red{
+    color:#e72020;
+}
+
+.green{
+    color:#20bc1a;
+}
+
+.holder li{
+    margin:2px 0;
+}
+
+.add{
+    margin:0 2px 0 ;
+}
+
+.opener{
+    margin: 1px 5px 0 0;
+    float: left;
+}
+
+.list-data{
+    list-style: none;
+    padding: 0 0 0 10px;
+}
+
+.list-data form{
+    float:left;
+}
+
+.list-data a{
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 5px;
+    overflow: hidden;
+    display: block;
+}
+
+.list-data a:hover,
+.list-data a.editable{
+    color:#fff;
+    background:#337ab7;
+    text-decoration: none
+}
+
+.list-data a:hover i{
+    color:#fff;
+}
+
+.list-data a input{
+    color:#fff;
+    border:0;
+    background: transparent;
+}
+
+.left-margin{
+    margin:0 0 0 10px;
+}
+
+.list-data li{
+
+
+
+}

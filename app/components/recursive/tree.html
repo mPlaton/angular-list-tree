@@ -1,0 +1,23 @@
+<a href="" ng-class="{'editable' : data.edit}">
+    <i ng-click="toggleNodes(data)"
+       ng-class="{'glyphicon-chevron-down' : (data.state && data.nodes.length > 0),
+                  'glyphicon-chevron-right' : (!data.state && data.nodes.length > 0),
+                  'glyphicon-file' : data.nodes.length == 0 }"
+       class="glyphicon opener"></i>
+
+    <span ng-show="!data.edit" ng-click="showEdit(data)">
+        {{ data.title }}
+        <i class="glyphicon glyphicon-pencil left-margin"></i>
+    </span>
+
+    <form ng-show="data.edit" ng-submit="submitEdit(data)">
+        <input ng-model="data.title" set-focus="data.edit" />
+    </form>
+
+    <i ng-click="add(data)" class="glyphicon glyphicon-plus pull-right green add"></i>
+    <i ng-click="remove(data)" class="glyphicon glyphicon-minus pull-right red" ng-show="data.nodes.length > 0"></i>
+</a>
+
+<ul class="list-data" ng-show="data.state">
+    <li ng-repeat="data in data.nodes track by $index" ng-include="'components/recursive/tree.html'"></li>
+</ul>

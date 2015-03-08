@@ -1,0 +1,5 @@
+<div class="holder">
+    <ul ng-app="tree.iterative" class="list-data" ng-init="init()" ng-controller="ListController">
+        <li ng-repeat="data in list track by $index" ng-show="data.visible" ng-include="'components/iterative/list.html'"></li>
+    </ul>
+</div>

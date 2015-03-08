@@ -1,0 +1,5 @@
+<div class="holder">
+    <ul ng-app="tree.recursive" class="list-data" ng-init="init()" ng-controller="TreeController">
+        <li ng-repeat="data in tree " ng-include="'components/recursive/tree.html'"></li>
+    </ul>
+</div>

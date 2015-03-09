@@ -13,7 +13,7 @@ You need git to clone the repository.
 Project also uses a number of node.js tools to initialize and test. You must have node.js and
 its package manager (npm) installed.  You can get them from [http://nodejs.org/](http://nodejs.org/).
 
-### Clone angular-seed
+### Clone angular-list-tree
 
 Clone the angular-list-tree repository using git:
 
